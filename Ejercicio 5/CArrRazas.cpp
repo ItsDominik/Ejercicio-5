@@ -12,8 +12,10 @@ CArrRazas::~CArrRazas()
 
 void CArrRazas::insertar(int MAXW, int MAXH)
 {
-	CAlfa* nuevo = new CAlfa();
-	arr.push_back(nuevo);
+	int conta, contb, contc = 0;
+	if (conta >= 0) { CAlfa* nuevo = new CAlfa(); arr.push_back(nuevo); }
+	if (contb == 2) { CBeta* nuevo = new CBeta(); arr.push_back(nuevo); }
+	if (contc == 4) { CGamma* nuevo = new CGamma(); arr.push_back(nuevo); }
 }
 
 void CArrRazas::moverTodos(int MAXW, int MAXH)
@@ -24,9 +26,24 @@ void CArrRazas::moverTodos(int MAXW, int MAXH)
 	}
 }
 
+void CArrRazas::eliminar(int pos)
+{
+	arr.erase(arr.begin() + pos);
+}
+
 void CArrRazas::setDy(int i, int dy)
 {
 	arr.at(i)->setDy(dy);
+}
+
+int CArrRazas::getY(int i)
+{
+	return arr.at(i)->getY();
+}
+
+int CArrRazas::getA(int i)
+{
+	return arr.at(i)->getA();
 }
 
 //void CArrRazas::setX(int i, int x)
