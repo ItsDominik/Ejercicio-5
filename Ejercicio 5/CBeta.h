@@ -8,7 +8,7 @@ protected:
 public:
     CBeta(int x, int y);
     ~CBeta();
-    void mover();
+    void  mover(int MAXW, int MAXH)override;
     void mostrar();
 };
 

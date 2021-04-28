@@ -12,13 +12,14 @@ CAlfa::CAlfa(int x, int y)
 	this->l = 21;
 	this->dy = 1;
 	this->dx = 0;
+	this->color = 0;
 }
 
 CAlfa::~CAlfa()
 {
 }
 
-void CAlfa::mover()
+void CAlfa::mover(int MAXW, int MAXH)
 {
 	borrar();
 	this->x += dx;

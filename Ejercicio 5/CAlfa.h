@@ -9,7 +9,7 @@ public:
     CAlfa();
     CAlfa(int x, int y);
     ~CAlfa();
-    void mover();
+    void  mover(int MAXW, int MAXH)override;
     void mostrar();
 };
 

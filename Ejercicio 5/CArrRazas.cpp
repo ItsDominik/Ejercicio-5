@@ -7,25 +7,24 @@ CArrRazas::CArrRazas()
 
 CArrRazas::~CArrRazas()
 {
-	arr.clear();
 }
 
 void CArrRazas::insertar(int MAXW, int MAXH, int cont)
 {
 	if (cont >=0) 
 	{
-		CAlfa* nuevo = new CAlfa(1, 0);
-		arr.push_back(nuevo); 
+		CAlfa* nuevoa = new CAlfa(1, 0);
+		arr.push_back(nuevoa); 
 	}
 	if (cont == 1 || cont == 3) 
 	{ 
-		CBeta* nuevo = new CBeta(MAXW/2, 0); 
-		arr.push_back(nuevo); 
+		CBeta* nuevob = new CBeta(MAXW/2, 0); 
+		arr.push_back(nuevob); 
 	}
 	if (cont == 3) 
 	{ 
-		CGamma* nuevo = new CGamma(MAXH-1-nuevo->getL(), 0);
-		arr.push_back(nuevo); 
+		CGamma* nuevog = new CGamma(MAXH-1-nuevog->getL(), 0);
+		arr.push_back(nuevog); 
 	}
 }
 

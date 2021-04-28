@@ -8,7 +8,7 @@ protected:
 public:
     CGamma(int x, int y);
     ~CGamma();
-    void mover();
+    void mover(int MAXW, int MAXH)override;
     void mostrar();
 };
 

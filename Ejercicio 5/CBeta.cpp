@@ -8,13 +8,14 @@ CBeta::CBeta(int x, int y)
 	this->l = 12;
 	this->dy = 1;
 	this->dx = 0;
+	this->color = 0;
 }
 
 CBeta::~CBeta()
 {
 }
 
-void CBeta::mover()
+void CBeta::mover(int MAXW, int MAXH)
 {
 	borrar();
 	this->x += dx;

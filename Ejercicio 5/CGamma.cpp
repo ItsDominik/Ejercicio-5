@@ -14,7 +14,7 @@ CGamma::~CGamma()
 {
 }
 
-void CGamma::mover()
+void CGamma::mover(int MAXW, int MAXH)
 {
 	borrar();
 	this->x += dx;
