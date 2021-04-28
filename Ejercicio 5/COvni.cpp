@@ -3,6 +3,7 @@
 void COvni::Borrar()
 {
 	//ZZZZ
+	//BRanco presenta
 	for (int i = 0; i < l; i++)
 	{
 		for (int j = 0; j < a; j++)
