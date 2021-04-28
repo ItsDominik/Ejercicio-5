@@ -17,12 +17,12 @@ void CArrRazas::insertar(int MAXW, int MAXH, int cont)
 		CAlfa* nuevo = new CAlfa(1, 0);
 		arr.push_back(nuevo); 
 	}
-	if (cont == 2) 
+	if (cont == 1 || cont == 3) 
 	{ 
-		CBeta* nuevo = new CBeta(MAXW/2, 0)
-			; arr.push_back(nuevo); 
+		CBeta* nuevo = new CBeta(MAXW/2, 0); 
+		arr.push_back(nuevo); 
 	}
-	if (cont == 4) 
+	if (cont == 3) 
 	{ 
 		CGamma* nuevo = new CGamma(MAXH-1-nuevo->getL(), 0);
 		arr.push_back(nuevo); 

@@ -2,6 +2,8 @@
 
 CInvasion::CInvasion()
 {
+	invadido = false;
+	numNaves = 0;
 }
 
 CInvasion::~CInvasion()
@@ -11,17 +13,10 @@ CInvasion::~CInvasion()
 void CInvasion::invadir(int MAXW, int MAXH)
 {
 	int cont = 0;
-	while (!invadido)
+	while (!invadido && getNumNaves()<20)
 	{
 		obj->moverTodos(MAXW, MAXH);
 		_sleep(30);
-		for (int i = 0; i < numNaves ; i++)
-		{
-			if (obj->getY(i)+obj->getA(i)==0)
-			{
-				obj->eliminar(i);
-			}
-		}
 		if (kbhit())
 		{
 			char t = getch();
@@ -29,8 +24,21 @@ void CInvasion::invadir(int MAXW, int MAXH)
 			{
 				obj->insertar(MAXW, MAXH, cont);
 				cont++;
-				if (cont == 5) cont = 0;
+				if (cont == 4) cont = 0;
+				numNaves++;
+			}
+		}
+		for (int i = 0; i < numNaves; i++)
+		{
+			if (obj->getY(i) + obj->getA(i) == MAXH)
+			{
+				obj->eliminar(i);
 			}
 		}
 	}
+}
+
+int CInvasion::getNumNaves()
+{
+	return numNaves;
 }

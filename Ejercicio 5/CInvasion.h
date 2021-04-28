@@ -11,5 +11,6 @@ public:
     CInvasion();
     ~CInvasion();
     void invadir(int MAXW, int MAXH);
+    int getNumNaves();
 };
 
