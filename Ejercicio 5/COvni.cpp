@@ -4,14 +4,6 @@ COvni::COvni()
 {
 }
 
-COvni::COvni(int x, int y, int a, int l)
-{
-	this->x = x;
-	this->y = y;
-	this->a = a;
-	this->l = l;
-}
-
 COvni::~COvni()
 {
 }

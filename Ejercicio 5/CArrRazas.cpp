@@ -13,7 +13,11 @@ CArrRazas::~CArrRazas()
 void CArrRazas::insertar(int MAXW, int MAXH)
 {
 	int conta, contb, contc = 0;
-	if (conta >= 0) { CAlfa* nuevo = new CAlfa(); arr.push_back(nuevo); }
+	if (conta >= 0) 
+	{
+		CAlfa* nuevo = new CAlfa(1, 0);
+		arr.push_back(nuevo); 
+	}
 	if (contb == 2) { CBeta* nuevo = new CBeta(); arr.push_back(nuevo); }
 	if (contc == 4) { CGamma* nuevo = new CGamma(); arr.push_back(nuevo); }
 }

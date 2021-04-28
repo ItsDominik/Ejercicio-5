@@ -6,7 +6,7 @@ class CGamma :
 protected:
 
 public:
-    CGamma();
+    CGamma(int x, int y);
     ~CGamma();
     void mover();
     void mostrar();

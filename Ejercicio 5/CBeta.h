@@ -6,7 +6,7 @@ class CBeta :
 protected:
 
 public:
-    CBeta();
+    CBeta(int x, int y);
     ~CBeta();
     void mover();
     void mostrar();

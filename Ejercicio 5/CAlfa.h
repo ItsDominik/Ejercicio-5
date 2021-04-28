@@ -7,6 +7,7 @@ protected:
 
 public:
     CAlfa();
+    CAlfa(int x, int y);
     ~CAlfa();
     void mover();
     void mostrar();

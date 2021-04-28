@@ -1,7 +1,13 @@
 #include "CBeta.h"
 
-CBeta::CBeta()
+CBeta::CBeta(int x, int y)
 {
+	this->x = x;
+	this->y = y;
+	this->a = 3;
+	this->l = 12;
+	this->dy = 1;
+	this->dx = 0;
 }
 
 CBeta::~CBeta()
@@ -18,5 +24,7 @@ void CBeta::mover()
 
 void CBeta::mostrar()
 {
-	cout << '-';
+	Console::SetCursorPosition(x + 7, y); cout << ".---.";
+	Console::SetCursorPosition(x + 1, y + 1); cout << "_/__~0_\_";
+	Console::SetCursorPosition(x, y + 2); cout << "(_________)";
 }

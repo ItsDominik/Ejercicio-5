@@ -11,7 +11,6 @@ protected:
 
 public:
 	COvni();
-	COvni(int x, int y, int a, int l);
 	~COvni();
 	void borrar();
 	virtual void mostrar();
