@@ -10,17 +10,19 @@ protected:
 
 public:
 	COvni();
+	COvni(int x, int y, int a, int l);
 	~COvni();
-	void Crear_Llantas(int cantidad);
-	void Borrar();
-	void Mostrar();
-	void Mover(int MAXW, int MAXH);
-	virtual void Cambiar_x(int nuevo);
-	void Cambiar_dx(int nuevo);
-	virtual void Cambiar_y(int nuevo);
-	void Detenerse();
-	int Retornar_x();
-	int Retornar_l();
-	int Retornar_dx();
+	void borrar();
+	virtual void mostrar();
+	virtual void mover(int MAXW, int MAXH);
+	void setDx(int dx);
+	void setDy(int dy);
+	int getX();
+	int getY();
+	int getDx();
+	int getDy();
+	int getA();
+	int getL();
+	int getColor();
 };
 
