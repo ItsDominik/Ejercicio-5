@@ -14,6 +14,7 @@ public:
 	void Crear_Llantas(int cantidad);
 	void Borrar();
 	void Mostrar();
+	void ello();
 	void Mover(int MAXW, int MAXH);
 	virtual void Cambiar_x(int nuevo);
 	void Cambiar_dx(int nuevo);
