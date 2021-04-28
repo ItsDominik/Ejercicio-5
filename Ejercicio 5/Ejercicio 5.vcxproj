@@ -112,11 +112,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CAlfa.cpp" />
+    <ClCompile Include="CArrRazas.cpp" />
+    <ClCompile Include="CBeta.cpp" />
+    <ClCompile Include="CGamma.cpp" />
+    <ClCompile Include="CInvasion.cpp" />
     <ClCompile Include="COvni.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CAlfa.h" />
+    <ClInclude Include="CArrRazas.h" />
+    <ClInclude Include="CBeta.h" />
+    <ClInclude Include="CGamma.h" />
+    <ClInclude Include="CInvasion.h" />
     <ClInclude Include="COvni.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
