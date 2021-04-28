@@ -2,6 +2,7 @@
 
 void COvni::Borrar()
 {
+	//ZZZZ
 	for (int i = 0; i < l; i++)
 	{
 		for (int j = 0; j < a; j++)
