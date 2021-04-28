@@ -10,7 +10,6 @@ protected:
 public:
     CInvasion();
     ~CInvasion();
-    void iniciar();
     void invadir(int MAXW, int MAXH);
 };
 

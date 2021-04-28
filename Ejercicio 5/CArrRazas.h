@@ -13,7 +13,7 @@ protected:
 public:
     CArrRazas();
     ~CArrRazas();
-	void insertar(int MAXW, int MAXH, char letra);
+	void insertar(int MAXW, int MAXH, int cont);
 	void moverTodos(int MAXW, int MAXH);
 	void eliminar(int pos);
 	void setDy(int i, int dy);

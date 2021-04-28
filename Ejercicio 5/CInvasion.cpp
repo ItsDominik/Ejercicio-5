@@ -10,6 +10,7 @@ CInvasion::~CInvasion()
 
 void CInvasion::invadir(int MAXW, int MAXH)
 {
+	int cont = 0;
 	while (!invadido)
 	{
 		obj->moverTodos(MAXW, MAXH);
@@ -21,6 +22,15 @@ void CInvasion::invadir(int MAXW, int MAXH)
 				obj->eliminar(i);
 			}
 		}
-
+		if (kbhit())
+		{
+			char t = getch();
+			if (toupper(t)=='A')
+			{
+				obj->insertar(MAXW, MAXH, cont);
+				cont++;
+				if (cont == 5) cont = 0;
+			}
+		}
 	}
 }

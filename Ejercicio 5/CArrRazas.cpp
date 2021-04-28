@@ -10,19 +10,19 @@ CArrRazas::~CArrRazas()
 	arr.clear();
 }
 
-void CArrRazas::insertar(int MAXW, int MAXH, char letra)
+void CArrRazas::insertar(int MAXW, int MAXH, int cont)
 {
-	if (letra == 'A') 
+	if (cont >=0) 
 	{
 		CAlfa* nuevo = new CAlfa(1, 0);
 		arr.push_back(nuevo); 
 	}
-	if (letra == 'B') 
+	if (cont == 2) 
 	{ 
 		CBeta* nuevo = new CBeta(MAXW/2, 0)
 			; arr.push_back(nuevo); 
 	}
-	if (letra == 'G') 
+	if (cont == 4) 
 	{ 
 		CGamma* nuevo = new CGamma(MAXH-1-nuevo->getL(), 0);
 		arr.push_back(nuevo); 
@@ -57,7 +57,3 @@ int CArrRazas::getA(int i)
 	return arr.at(i)->getA();
 }
 
-//void CArrRazas::setX(int i, int x)
-//{
-//	arr.at(i)->setDx(1);
-//}
